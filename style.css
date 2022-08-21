@@ -4,11 +4,37 @@
     padding: 0;
     font-family: roboto, sans-serif;
 }
+body{
+    background-color: white;
+}
+button{
+    background-color: #3882f6;
+    color: #fff;
+    width: 5rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+}
 
-
+.container-lg, .container-sm{
+    padding: 1rem 0 5rem;
+}
 .container-lg{
-    padding: 1rem 0 4rem;
-    margin: 0 10% 2rem;
+    margin: 0 10% 1rem;
+    
+}
+.container-sm{
+    margin: 0 25% 1rem;
+    
+}
+
+#info-title{
+    text-align: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .navbar{
@@ -18,10 +44,10 @@
     margin-bottom: 5rem;
 }
 
-.header{
+.header,footer{
     background-color: #1F2937;
 }
-.header-logo{
+.header-logo, .signup-title{
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -31,28 +57,27 @@
     gap: 3rem;
     align-items: center;
 }
-.header-link, #secondary-header-text{
+.header-link, #secondary-header-text,.signup-info, .footer-text{
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
 }
 
+#secondary-header-text{
+    margin-bottom: 0.5rem;
+}
 .header-contents{
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 5rem;
-}
-.header-content{
-    flex: 1;
-}
-.img-placeholder{
-    height: 100%;
-    width: 100%;
-    background-color:  #aaaaaa;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 4rem;
+
+}
+
+
+
+.header-content img{
+    width: 100%;
 }
 
 
@@ -62,5 +87,56 @@
     font-weight: bolder;
     color: #F9FAF8;
 
+}
+
+.info-cards{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 35px;
+}
+.info-card{
+    flex: 1;
+    text-align: center;    
+}
+.bordered-img-container{
+    width: 100%;
+    height: 150px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+
+}
+
+.quote-section{
+    background-color: #E5E7EB;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style:italic;
+    color:#1F2937;
+    text-align: justify;
+}
+
+.quote-author{
+    font-weight: bolder;
+    text-align: right;
+    font-size: 28px;
+}
+.signup-section{
+    background-color: #3882f6;
+    padding: 30px 20%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup-item button{
+    border: 2px solid #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
 }
 
